@@ -5,7 +5,7 @@ use alloy::{
 
 use crate::{eip712::Eip712, prelude::*, signature::agent::l1, Error};
 
-pub(crate) fn sign_l1_action(
+pub fn sign_l1_action(
     wallet: &PrivateKeySigner,
     connection_id: B256,
     is_mainnet: bool,
